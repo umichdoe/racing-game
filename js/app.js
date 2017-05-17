@@ -5,18 +5,63 @@ $(document).ready(function() {
   // goes inside this function
     // body...
 
+    function findPositionOne() {
+      var currentPositionOne = $('#player1').position();
+      var currentCoordinateOne = currentPositionOne.left;
+      var rightCoordinateOne = currentCoordinateOne + 200;
+      return rightCoordinateOne;
+    }
+
+    function findPositionTwo() {
+      var currentPositionTwo = $('#player2').position();
+      var currentCoordinateTwo = currentPositionTwo.left;
+      var rightCoordinateTwo = currentCoordinateTwo + 200;
+      return rightCoordinateTwo;
+    }
+
     $(document).keydown(function(keyPressed) {
-     if (keyPressed.keyCode == 65) {
+
+      if ( findPositionOne() > $(window).width() ) {
+        alert("You won!");
+        $('#player1').removeAttr('style');
+        $('#player2').removeAttr('style');
+      } else if (keyPressed.keyCode === 65) {
      $('#player1').animate( {left: '+=100'}, 'fast');
     }});
 
     $(document).keydown(function(keyPressed) {
-     if (keyPressed.keyCode == 76) {
+      if ( findPositionTwo() > $(window).width() ) {
+        alert("You won!");
+        $('#player1').removeAttr('style');
+        $('#player2').removeAttr('style');
+      } else if (keyPressed.keyCode === 75) {
      $('#player2').animate( {left: '+=100'}, 'fast');
     }});
 
+/*
+if function findPositionOne() > $(window).width();
+  $('#player1').removeAttr('style');
+  reset
+  alert("You won")
+
+*/
+
+/*
+
+check window width
+if window width - player width <=0 negative
+then do this
+otherwise do this
 
 
+//finds position of left
+$('#player1').position();
+store into a variable
+this is an object.
+then do e.g. aaa.left; to get number
+
+
+*/
 
 
 

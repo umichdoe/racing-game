@@ -1,5 +1,29 @@
 body {
-  background: blue;
+  background: #4ECDC4;
+  margin-top: 100px;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font: 'Lato', Arial;
+  font-size: 50px;
+}
+
+p {
+  color: #ffffff;
+  text-align: center;
+  font: 'Lato', Arial;
+  font-size: 20px;
+}
+
+.col-md-12 {
+  background: #C7F464;
+  border: 20px;
+  border-style: dashed;
+  border-color: yellow;
+  position: relative;
 }
 
 .container {
@@ -8,31 +32,12 @@ body {
   border-style: dashed;
 }
 
-.col-md-12 {
-  background: purple;
-  border: 20px;
-  border-style: dashed;
-  border-color: yellow;
-  position: relative;
-}  
-
 #player1 {
   position: relative;
 }
 
 #player2 {
   position: relative;
-}
-
-#board {
-  margin-top: 10px;
-}
-
-.box {
-  border: 10px solid black;
-  height: 150px;
-  background: orange;
-  font-size: 20px;
 }
 
 .reset-button {
