@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///Users/umichdoe/wdi/racing-game/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <!-- set viewport to device width to allow responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS from CDN -->
+    <link rel="stylesheet" href="./Racing Game_files/bootstrap.min.css">
+
+    <!-- link to custom stylesheet (always require after Bootstrap) -->
+    <link rel="stylesheet" href="./Racing Game_files/style.css" media="screen" title="no title" charset="utf-8">
+    <!-- jQuery from CDN -->
+    <script src="./Racing Game_files/jquery.min.js"></script>
+    <!-- link to custom javascript file (always require after external JS libraries) -->
+    <script type="text/javascript" src="./Racing Game_files/app.js"></script>
+
+
+
+    <title>Racing Game</title>
+  </head>
+
+
+
+  <body>
+<!-- RESET BUTTON -->
+
+
+
+<h1>Racing Game</h1>
+
+<div class="col-md-12">
+  <div class="row row-1">
+    <img id="player1" src="./Racing Game_files/bear2.png" alt="player 1" style="left: 500px; right: 1000px;">
+  </div>
+</div>
+
+
+<div class="col-md-12">
+  <div class="row row-1">
+    <img id="player2" src="./Racing Game_files/pig2.png" alt="player 2">
+  </div>
+</div>
+
+
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <hr>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="row row-1">
+          <img id="player3" src="./Racing Game_files/sheep2.png" alt="player 3">
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row row-2">
+          <img id="player4" src="./Racing Game_files/bear2.png" alt="player 4">
+        </div>
+      </div>
+
+
+
+      <div class="row row-2">
+
+        <img src="./Racing Game_files/pig2.png" alt="player 1">
+
+      </div>
+
+
+      <div class="row">
+
+        <!-- a column represents our game board -->
+        <!-- the `offset` class helps us center the board -->
+        <div class="col-md-6 col-md-offset-3" id="board">
+
+          <!-- you can put rows inside of columns! -->
+          <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 box" id="box-one"></div>
+            <div class="col-xs-4 col-sm-4 col-md-4 box" id="box-two"></div>
+            <div class="col-xs-4 col-sm-4 col-md-4 box" id="box-three"></div>
+
+            <div class="col-xs-4 col-sm-4 col-md-4 box" id="box-four"></div>
+            <div class="col-xs-4 col-sm-4 col-md-4 box" id="box-five"></div>
+            <div class="col-xs-4 col-sm-4 col-md-4 box" id="box-six"></div>
+
+            <div class="col-xs-4 col-sm-4 col-md-4 box" id="box-seven"></div>
+            <div class="col-xs-4 col-sm-4 col-md-4 box" id="box-eight"></div>
+            <div class="col-xs-4 col-sm-4 col-md-4 box" id="box-nine"></div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+<!-- RESET BUTTON -->
+    <div class="container reset-button">
+
+      <button type="button" class="btn btn-primary">Reset 1</button>
+
+      <input class="btn btn-primary btn-large" type="reset" value="Reset 2">
+
+    </div>
+
+
+
+  
+
+</body></html>

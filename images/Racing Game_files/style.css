@@ -1,0 +1,37 @@
+body {
+  background: blue;
+}
+
+.container {
+  background: red;
+  border: 20px;
+  border-style: dashed;
+}
+
+.col-md-12 {
+  background: purple;
+  border: 20px;
+  border-style: dashed;
+  border-color: yellow;
+}
+
+
+#board {
+  margin-top: 10px;
+}
+
+.box {
+  border: 10px solid black;
+  height: 150px;
+  background: orange;
+  font-size: 20px;
+}
+
+.reset-button {
+  background: green;
+  text-align: center;
+}
+
+.btn {
+  padding: 24px 50px;
+}
