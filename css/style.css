@@ -13,8 +13,16 @@ body {
   border: 20px;
   border-style: dashed;
   border-color: yellow;
+  position: relative;
+}  
+
+#player1 {
+  position: relative;
 }
 
+#player2 {
+  position: relative;
+}
 
 #board {
   margin-top: 10px;
