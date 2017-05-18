@@ -1,6 +1,6 @@
-#Racing Game
+# Racing Game
 
-##Goal
+## Goal
 The goal of this project was to build a racing game from scratch.
 * Create a Git repository for the game.
 * Create HTML, CSS, and Javascript files. Connect them all.
@@ -9,7 +9,7 @@ The goal of this project was to build a racing game from scratch.
 * I had to use jquery
 * The site had to be designed from scratch
 
-##Tech Stack
+## Tech Stack
 * HTML
 * CSS
 * javascript
