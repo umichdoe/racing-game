@@ -1,3 +1,28 @@
+#Racing Game
+
+##Goal
+The goal of this project was to build a racing game from scratch.
+* Create a Git repository for the game.
+* Create HTML, CSS, and Javascript files. Connect them all.
+* There must be at least 2 images
+* The images must move across the screen based on a keyboard input
+* I had to use jquery
+* The site had to be designed from scratch
+
+##Tech Stack
+* HTML
+* CSS
+* javascript
+* jquery
+* Bootstrap
+
+
+
+
+
+
+
+
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60"> Project 0 - Racing Game
 
 **Read this entire document before writing a line of code.**

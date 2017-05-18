@@ -8,20 +8,21 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   font: 'Lato', Arial;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 400;
+  letter-spacing: 4px;
 }
 
 p {
   color: #ffffff;
   text-align: center;
   font: 'Lato', Arial;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .col-md-12 {
   position: relative;
-  padding-top: 50px;
+  padding-top: 35px;
 }
 
 #player1 {
