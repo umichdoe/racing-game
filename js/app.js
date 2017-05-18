@@ -22,18 +22,18 @@ $(document).ready(function() {
     $(document).keydown(function(keyPressed) {
 
       if ( findPositionOne() > $(window).width() ) {
-        alert("You won!");
         $('#player1').removeAttr('style');
         $('#player2').removeAttr('style');
+        alert("Player 1 Won!");
       } else if (keyPressed.keyCode === 65) {
      $('#player1').animate( {left: '+=100'}, 'fast');
     }});
 
     $(document).keydown(function(keyPressed) {
       if ( findPositionTwo() > $(window).width() ) {
-        alert("You won!");
         $('#player1').removeAttr('style');
         $('#player2').removeAttr('style');
+        alert("Player 2 Won!");
       } else if (keyPressed.keyCode === 75) {
      $('#player2').animate( {left: '+=100'}, 'fast');
     }});
