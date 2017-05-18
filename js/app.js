@@ -5,64 +5,36 @@ $(document).ready(function() {
   // goes inside this function
     // body...
 
-    function findPositionOne() {
-      var currentPositionOne = $('#player1').position();
-      var currentCoordinateOne = currentPositionOne.left;
-      var rightCoordinateOne = currentCoordinateOne + 200;
-      return rightCoordinateOne;
+    function findPosition(player) {
+      var currentPosition = player.position();
+      var currentCoordinate = currentPosition.left;
+      var rightCoordinate = currentCoordinate + 100;
+      return rightCoordinate;
     }
 
-    function findPositionTwo() {
-      var currentPositionTwo = $('#player2').position();
-      var currentCoordinateTwo = currentPositionTwo.left;
-      var rightCoordinateTwo = currentCoordinateTwo + 200;
-      return rightCoordinateTwo;
-    }
+    var player1 = $('#player1');
+    var player2 = $('#player2');
+    var positionPlayer1 = findPosition(player1);
+    var positionPlayer2 = findPosition(player2);
+
 
     $(document).keydown(function(keyPressed) {
 
-      if ( findPositionOne() > $(window).width() ) {
+      if ( findPosition(player1) > $(window).width() ) {
         $('#player1').removeAttr('style');
         $('#player2').removeAttr('style');
         alert("Player 1 Won!");
       } else if (keyPressed.keyCode === 65) {
-     $('#player1').animate( {left: '+=100'}, 'fast');
+        $('#player1').animate( {left: '+=100'}, 'fast');
     }});
 
     $(document).keydown(function(keyPressed) {
-      if ( findPositionTwo() > $(window).width() ) {
+      if ( findPosition(player2) > $(window).width() ) {
         $('#player1').removeAttr('style');
         $('#player2').removeAttr('style');
         alert("Player 2 Won!");
       } else if (keyPressed.keyCode === 75) {
-     $('#player2').animate( {left: '+=100'}, 'fast');
+        $('#player2').animate( {left: '+=100'}, 'fast');
     }});
-
-/*
-if function findPositionOne() > $(window).width();
-  $('#player1').removeAttr('style');
-  reset
-  alert("You won")
-
-*/
-
-/*
-
-check window width
-if window width - player width <=0 negative
-then do this
-otherwise do this
-
-
-//finds position of left
-$('#player1').position();
-store into a variable
-this is an object.
-then do e.g. aaa.left; to get number
-
-
-*/
-
-
 
 }); //don't change this line

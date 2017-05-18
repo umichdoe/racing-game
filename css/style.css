@@ -9,27 +9,19 @@ h1 {
   text-transform: uppercase;
   font: 'Lato', Arial;
   font-size: 50px;
+  font-weight: 400;
 }
 
 p {
   color: #ffffff;
   text-align: center;
   font: 'Lato', Arial;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .col-md-12 {
-  background: #C7F464;
-  border: 20px;
-  border-style: dashed;
-  border-color: yellow;
   position: relative;
-}
-
-.container {
-  background: red;
-  border: 20px;
-  border-style: dashed;
+  padding-top: 50px;
 }
 
 #player1 {
@@ -38,13 +30,4 @@ p {
 
 #player2 {
   position: relative;
-}
-
-.reset-button {
-  background: green;
-  text-align: center;
-}
-
-.btn {
-  padding: 24px 50px;
 }
